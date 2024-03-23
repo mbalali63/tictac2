@@ -1,3 +1,41 @@
+# Tic Tac Game
+
+## Introduction
+This is a tic-tac game, implemented to practice REACT fundamentals.
+
+
+
+
+
+## Components:
+I will implement these components to build this program:
+1. Box: this is a component, which we will have nine of that in the game. It could have a state with three possible values:
+    X, O, or null. 
+    Every click on this component will change the state. According to the which player turn is, the state will change between null and X or null and O.
+    if a state is specified to this component, before, the state value will not change by clicking on it.
+2. Header: It is a static component, which is just for demonstrating the title of the app. It will have a color flash when the game is started and finished.
+3. Footer: It is a static component, which is just for demonstrating the programmer of the app. It will have a color flash when the game is started and finished.
+4. 
+5. RestartButton: This button will refresh the page on click.
+6. App: which is the general component, wrapping all others. The general states are included in this component: currentPlayer, Players: There are two of this states for every player. This states will contain player name, score, sign, and color.
+
+
+
+
+## Main Functionalities
+1. Clicking Boxes:
+    when user click a box, its onClick event will be triggered. The according to its current state, the click could be:
+    <ul>
+        <li>igonred</li>
+        <li>lead to an X or O state</li>
+    </ul>
+    For this reason a function like this will be passed as onClick event:
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import {React,useState} from "react";
+import BoxSet from "./components/BoxSet";
+import Header from "./components/Header.js"
+import Player from "./components/Player.js"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Header />
+      <BoxSet />
+      <button id="restart-btn">Restart</button>
+      {/*<section id="players-container">-->*/}
+      <Player itemNo = "I" playerName = "Rayan" playerSign = "X"/>
+      <Player itemNo = "II" playerName = "Elaheh" playerSign = "O"/>
+      {/*</section>*/}
+      <footer> Implemented by <a href="https://github.com/mbalali63" target="_blank"> Mahdi Balali</a></footer>
+    </main>
   );
 }
 
