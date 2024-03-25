@@ -15,9 +15,8 @@ I will implement these components to build this program:
     if a state is specified to this component, before, the state value will not change by clicking on it.
 2. Header: It is a static component, which is just for demonstrating the title of the app. It will have a color flash when the game is started and finished.
 3. Footer: It is a static component, which is just for demonstrating the programmer of the app. It will have a color flash when the game is started and finished.
-4. 
-5. RestartButton: This button will refresh the page on click.
-6. App: which is the general component, wrapping all others. The general states are included in this component: currentPlayer, Players: There are two of this states for every player. This states will contain player name, score, sign, and color.
+4. RestartButton: This button will refresh the page on click.
+5. App: which is the general component, wrapping all others. The general states are included in this component: currentPlayer, Players: There are two of this states for every player. This states will contain player name, score, sign, and color.
 
 
 
@@ -28,11 +27,22 @@ I will implement these components to build this program:
     <ul>
         <li>igonred</li>
         <li>lead to an X or O state</li>
+        <li>the whoseTurn useState will be switched </li>
     </ul>
-    For this reason a function like this will be passed as onClick event:
+2. Every time a box is cliked after updating the whoseTurn and currentState of the box, the winner check must be done.
 
 
 
+
+
+## Usestates:
+1. whoseTurn: this useState saves if it is player I or player II turn. it will have any of these two values: "I" or "II". This will be defined in App component. 
+2. currentState: this useState saves the status of each box. it could be "I", "II", or "none". it will be declared in Box component.
+3. plyaerIScore and playerIIScore save the score of each player
+4. gameCount, save the number of games played.
+5. gameReset is a trigger state which is used to reset the boxes whenever user click Reset button
+6. boxStates is in BoxSet component, and saves the currentState of all boxes
+7. winner saves the winner player. during the game its value is null.
 
 
 
